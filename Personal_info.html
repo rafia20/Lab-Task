@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Form</title>
+    <meta charset="utf-8">
+    <script src="FormScript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        /* .containerWrapper {
+            display: flex;
+
+        }
+
+        .container1,
+        .container2 {
+
+            flex: 1;
+            padding: 20px;
+        } */
+        /* .containerWrapper {
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+.container1,
+.container2 {
+    flex: 1;
+    padding: 20px;
+}
+
+.container1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container2 {
+    margin-left: 20px;
+}
+
+label {
+    color: #666;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.btn {
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-default {
+    background-color: #eee;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #a815ec;
+    color: #fff;
+}
+
+table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #6813a1;
+    color: #fff;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.action-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.action-btns button {
+    margin-right: 5px;
+} */
+   /* Set font and size */
+   body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        /* Set colors */
+        #Form {
+            background-color: #f5f5f5;
+        }
+
+        .form-group label {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .radio label {
+            color: #333;
+        }
+
+        .table thead {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Set container styles */
+        .containerWrapper {
+            display: flex;
+        }
+
+        .container1,
+        .container2 {
+          
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Set form input styles */
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=radio] {
+            margin-right: 10px;
+        }
+
+        /* Set form button styles */
+        .btn-default {
+            background-color: #f5f5f5;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+
+        .btn-primary {
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+
+        /* Set table styles */
+        .table td,
+        .table th {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Set table row hover style */
+        .table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div id="Form " class="containerWrapper">
+
+        <div class="container1">
+
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="gender" >Gender:</label>
+                    <div class="radio">
+                        <label for ='male'><input type="radio" id="gender" name="gender" value="male">Male</label>
+                    </div>
+                    <div class="radio">
+                        <label for ="Female"><input type="radio" name="gender" id="gender" value="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Age">Age:</label>
+                    <input type="text" class="form-control" id="Age" placeholder="Enter Age">
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <select class="form-control" id="city">
+                        <option value="New York">New York</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Houston">Houston</option>
+                        <option value="Philadelphia">Philadelphia</option>
+                    </select>
+                </div>
+                <!-- Adding functionality of button  -->
+                <button type="button" class="btn btn-default" id="add-btn" onclick="addOnClick()">Add</button>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Reset</button>
+                <button type="button" class="btn btn-default" id="update-btn" onclick="addOnClick()">Update</button>
+            </form>
+        </div>
+
+        <div class="container2">
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>  
